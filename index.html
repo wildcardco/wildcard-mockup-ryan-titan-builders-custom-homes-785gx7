@@ -2,364 +2,363 @@
 <html lang="en">
 <head>
 <meta name="robots" content="noindex, nofollow">
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Titan Builders Custom Homes | Custom Home Builder in Wheatfield, Indiana</title>
-<meta name="description" content="Titan Builders Custom Homes designs and builds custom homes for Northwest Indiana landowners in Wheatfield and the surrounding Newton and Jasper County area.">
+<meta name="description" content="Titan Builders Custom Homes builds ground-up custom homes on rural and acreage lots in Wheatfield, Indiana and the surrounding Jasper and Newton County communities.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --brand:#5A1E1B;
-    --accent:#E8B04A;
-    --surface:#F8F3EA;
-    --ink:#1E0F0E;
-    --brand-deep:#3d1412;
-    --line:rgba(30,15,14,.18);
-    --head:"Familjen Grotesk", Georgia, serif;
-    --body:"Newsreader", Georgia, serif;
+    --steel:#36454F;
+    --steel-deep:#2b3840;
+    --rust:#C05746;
+    --rust-dark:#9c4336;
+    --paper:#F3F1ED;
+    --ink:#181E22;
+    --white:#FFFFFF;
+    --wrap:1200px;
+    --pad:clamp(1.25rem,4vw,3rem);
   }
-  *{box-sizing:border-box;margin:0;padding:0}
+  *,*::before,*::after{box-sizing:border-box;border-radius:0}
   html{scroll-behavior:smooth}
-  body{font-family:var(--body);font-size:1.15rem;line-height:1.6;color:var(--ink);background:var(--surface)}
+  body{margin:0;font-family:"Manrope",sans-serif;font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
   img{display:block;max-width:100%}
   a{color:inherit}
-  h1,h2,h3{font-family:var(--head);line-height:1.05;letter-spacing:-.01em;font-weight:700}
-  .wrap{width:min(1180px,100% - 2.5rem);margin-inline:auto}
-  .icon{width:1.25em;height:1.25em;flex:none;stroke:currentColor;fill:none;stroke-width:1.5}
-  .skip{position:absolute;left:-999px}
-  .skip:focus{left:1rem;top:1rem;background:var(--accent);color:var(--ink);padding:.5rem 1rem;z-index:50}
+  h1,h2,h3{font-family:"Syne",sans-serif;font-weight:800;line-height:1.02;margin:0;text-transform:uppercase;letter-spacing:.04em}
+  p{margin:0 0 1rem}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+  .skip{position:absolute;left:-999px;top:0;background:var(--rust);color:#fff;padding:.75rem 1rem;z-index:10}
+  .skip:focus{left:0}
+  svg.icon{width:1.25em;height:1.25em;flex:none}
 
-  /* buttons — square-cornered, like cut stock */
-  .btn{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--head);font-weight:600;font-size:1.05rem;text-decoration:none;padding:.95rem 1.4rem;border:2px solid transparent;border-radius:2px;transition:transform .15s ease, background .15s ease}
-  .btn:hover{transform:translateY(-2px)}
-  .btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-  .btn-accent{background:var(--accent);color:var(--ink)}
-  .btn-accent:hover{background:#f0c26a}
-  .btn-ghost{border-color:rgba(248,243,234,.55);color:var(--surface)}
-  .btn-ghost:hover{background:rgba(248,243,234,.1)}
-  .btn-brand{background:var(--brand);color:var(--surface)}
-  .btn-brand:hover{background:var(--brand-deep)}
+  /* Buttons: flat colour shift only */
+  .btn{display:inline-flex;align-items:center;gap:.6rem;font-family:"Manrope",sans-serif;font-weight:800;font-size:1rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:1rem 1.5rem;background:var(--rust);color:var(--white);border:2px solid var(--rust);transition:background-color .15s,border-color .15s}
+  .btn:hover,.btn:focus-visible{background:var(--rust-dark);border-color:var(--rust-dark)}
+  .btn:focus-visible,a:focus-visible{outline:3px solid var(--white);outline-offset:3px}
+  .btn-ghost{background:transparent;border-color:rgba(255,255,255,.55)}
+  .btn-ghost:hover,.btn-ghost:focus-visible{background:var(--rust-dark);border-color:var(--rust-dark)}
 
-  /* header */
-  header.top{background:var(--brand-deep);color:var(--surface)}
-  .top .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 0}
-  .brand{font-family:var(--head);font-weight:700;font-size:1.2rem;text-decoration:none;letter-spacing:.01em}
-  .brand span{color:var(--accent)}
-  .top nav{display:none;gap:1.6rem;font-family:var(--head);font-weight:500}
-  .top nav a{text-decoration:none;opacity:.85}
-  .top nav a:hover{opacity:1;color:var(--accent)}
-  .top .call{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--head);font-weight:600;text-decoration:none;color:var(--accent)}
+  /* Header */
+  .site-header{background:var(--steel);color:var(--white);border-bottom:1px solid rgba(255,255,255,.12)}
+  .site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:1rem;padding-bottom:1rem}
+  .wordmark{font-family:"Syne",sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.14em;text-decoration:none;font-size:1rem;line-height:1.1}
+  .wordmark span{display:block;font-family:"Manrope",sans-serif;font-weight:500;letter-spacing:.22em;font-size:.68rem;color:rgba(255,255,255,.75)}
+  .header-call{display:inline-flex;align-items:center;gap:.5rem;font-weight:800;text-decoration:none;font-size:.95rem;color:var(--white)}
+  .header-call:hover{color:#f0c9c1}
+  .nav{display:none}
+  @media (min-width:860px){
+    .nav{display:flex;gap:1.75rem;font-size:.85rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+    .nav a{text-decoration:none;color:rgba(255,255,255,.85)}
+    .nav a:hover{color:var(--white)}
+  }
 
-  /* HERO — 60/40 split, blueprint drawn over the land */
-  .hero{display:grid;grid-template-columns:1fr;background:var(--brand)}
-  .hero-photo{position:relative;background:var(--brand);aspect-ratio:4/3;overflow:hidden}
+  /* Hero */
+  .hero{background:var(--steel);color:var(--white);position:relative;padding-top:clamp(3rem,8vw,6rem)}
+  .hero-copy{position:relative;z-index:2;max-width:56rem}
+  .eyebrow{font-weight:700;font-size:.82rem;letter-spacing:.22em;text-transform:uppercase;color:#e9b3a9;margin-bottom:1.25rem;display:block}
+  .hero h1{font-size:clamp(2.6rem,9vw,6.4rem);letter-spacing:.06em;margin-bottom:1.5rem}
+  .hero-lede{font-size:clamp(1.05rem,2vw,1.25rem);max-width:38rem;color:rgba(255,255,255,.88)}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin:2rem 0 1.5rem}
+  .rating{display:flex;align-items:center;gap:.6rem;font-size:.92rem;color:rgba(255,255,255,.85);font-weight:500}
+  .rating .stars{display:flex;color:#e9b3a9}
+  .rating .stars svg{width:1.05rem;height:1.05rem}
+  .hero-photo-row{position:relative;z-index:2;margin-top:clamp(2.5rem,6vw,4rem);margin-bottom:calc(-1 * clamp(5rem,14vw,11rem))}
+  .hero-photo{position:relative;overflow:hidden;background:var(--steel-deep);aspect-ratio:3/2;width:100%}
+  @media (min-width:860px){
+    .hero-photo-row{margin-left:auto;width:min(86vw,1180px)}
+    .hero-photo{aspect-ratio:16/8}
+  }
   .hero-photo img{width:100%;height:100%;object-fit:cover}
-  .hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,15,14,.15) 0%,rgba(30,15,14,.55) 100%);pointer-events:none}
-  .blueprint{position:absolute;inset:0;width:100%;height:100%;z-index:2;pointer-events:none}
-  .blueprint .plan{stroke:var(--surface);stroke-width:2;fill:none;opacity:.8;stroke-dasharray:1600;stroke-dashoffset:1600;animation:draw 3.2s ease-out .3s forwards}
-  .blueprint .dim{stroke:var(--accent);stroke-width:1.2;fill:none;opacity:.9}
-  .blueprint text{font-family:var(--head);font-size:13px;fill:var(--accent);letter-spacing:.12em;font-weight:600}
-  .blueprint .room{fill:var(--surface);opacity:.85;font-size:11px;letter-spacing:.14em}
-  @keyframes draw{to{stroke-dashoffset:0}}
-  @media (prefers-reduced-motion:reduce){.blueprint .plan{animation:none;stroke-dashoffset:0}.btn:hover{transform:none}}
+  .hero-spacer{height:clamp(5rem,14vw,11rem);background:var(--paper)}
 
-  .hero-copy{color:var(--surface);padding:2.5rem 1.25rem 3rem;display:flex;flex-direction:column;justify-content:center}
-  .kicker{font-family:var(--head);font-weight:600;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
-  .hero h1{font-size:clamp(2.3rem,7vw,3.9rem);margin-bottom:1.2rem}
-  .hero p.lede{font-size:1.2rem;max-width:34ch;opacity:.92;margin-bottom:1.8rem}
-  .hero .actions{display:flex;flex-wrap:wrap;gap:.8rem}
-  .hero .rating{display:flex;align-items:center;gap:.6rem;margin-top:2rem;padding-top:1.2rem;border-top:1px solid rgba(248,243,234,.25);font-family:var(--head)}
-  .stars{display:flex;color:var(--accent)}
-  .stars .icon{fill:var(--accent);stroke:var(--accent);width:1.1em;height:1.1em}
+  /* Intro strip */
+  .intro{background:var(--paper);padding:clamp(3rem,7vw,5rem) 0 clamp(2rem,5vw,3rem)}
+  .intro .wrap{display:grid;gap:1.5rem}
+  @media (min-width:860px){.intro .wrap{grid-template-columns:5fr 7fr;align-items:end}}
+  .intro h2{font-size:clamp(1.9rem,5vw,3.4rem);color:var(--steel)}
+  .intro p{font-size:1.15rem;max-width:40rem;margin:0}
 
-  /* intro */
-  .intro{padding:4.5rem 0 3rem}
-  .intro .wrap{display:grid;gap:2rem}
-  .intro h2{font-size:clamp(1.9rem,4.5vw,2.9rem);color:var(--brand);max-width:18ch}
-  .intro p{max-width:58ch;font-size:1.2rem}
-  .intro ul{list-style:none;display:grid;gap:.9rem;margin-top:1.4rem}
-  .intro li{display:flex;gap:.7rem;align-items:flex-start;font-family:var(--head);font-weight:500;font-size:1.08rem}
-  .intro li .icon{color:var(--brand);margin-top:.15rem}
-
-  /* services: wide photo + offset overlapping card */
-  .services{padding:2rem 0 4rem}
-  .section-head{margin-bottom:2.5rem;max-width:40rem}
-  .section-head h2{font-size:clamp(2rem,5vw,3.1rem);color:var(--brand);margin-bottom:.7rem}
-  .svc{position:relative;margin-bottom:3.5rem}
-  .svc figure{background:var(--brand);aspect-ratio:4/3;overflow:hidden;border-radius:2px}
-  .svc figure img{width:100%;height:100%;object-fit:cover}
-  .svc .card{position:relative;background:var(--surface);border-top:5px solid var(--accent);padding:1.5rem 1.4rem;margin:-3rem 1rem 0;box-shadow:0 18px 40px -20px rgba(30,15,14,.45)}
-  .svc h3{font-size:1.65rem;color:var(--brand);margin-bottom:.5rem}
-  .svc p{font-size:1.08rem}
-
-  /* before / after */
-  .build{background:var(--brand);color:var(--surface);padding:4.5rem 0}
-  .build .section-head h2{color:var(--surface)}
-  .build .section-head p{opacity:.9}
-  .stages{display:grid;gap:1.2rem}
-  .stage figure{background:var(--brand-deep);overflow:hidden;border-radius:2px;aspect-ratio:4/3}
-  .stage figure img{width:100%;height:100%;object-fit:cover}
-  .stage figcaption,.stage .cap{font-family:var(--head);font-weight:600;margin-top:.7rem;display:flex;gap:.6rem;align-items:baseline}
-  .stage .tag{background:var(--accent);color:var(--ink);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;padding:.15rem .5rem;border-radius:2px}
-  .stage.after figure{aspect-ratio:4/3}
-
-  /* review — single large statement */
-  .review{padding:5rem 0}
-  .review .wrap{display:grid;gap:2.5rem;align-items:center}
-  .review blockquote{font-family:var(--head);font-weight:600;font-size:clamp(1.8rem,4.6vw,3rem);line-height:1.15;color:var(--brand);max-width:22ch}
-  .review .big{display:flex;align-items:center;gap:1rem;margin-bottom:1.4rem}
-  .review .big strong{font-family:var(--head);font-size:4.5rem;line-height:1;color:var(--ink)}
-  .review .big .stars .icon{width:1.6rem;height:1.6rem}
-  .review .note{margin-top:1.4rem;max-width:48ch}
-  .review figure{background:var(--brand);aspect-ratio:4/5;overflow:hidden;border-radius:2px}
-  .review figure img{width:100%;height:100%;object-fit:cover}
-
-  /* contact */
-  .contact{background:var(--ink);color:var(--surface);padding:4.5rem 0}
-  .contact .wrap{display:grid;gap:2.5rem}
-  .contact h2{font-size:clamp(2rem,5vw,3.2rem);margin-bottom:1rem}
-  .contact h2 span{color:var(--accent)}
-  .contact p{max-width:46ch;opacity:.92}
-  .checklist{list-style:none;display:grid;gap:1rem;margin:1.8rem 0}
-  .checklist li{display:flex;gap:.8rem;align-items:flex-start}
-  .checklist .icon{color:var(--accent);margin-top:.2rem}
-  .facts{border:1px solid rgba(248,243,234,.22);padding:1.8rem;display:grid;gap:1.3rem;align-content:start;border-radius:2px}
-  .facts a,.facts div.f{display:flex;gap:.8rem;align-items:flex-start;text-decoration:none;font-family:var(--head);font-size:1.15rem}
-  .facts .icon{color:var(--accent);margin-top:.2rem}
-  .facts small{display:block;font-family:var(--body);opacity:.7;font-size:.95rem}
-
-  footer{background:var(--brand-deep);color:var(--surface);padding:2rem 0;font-size:.98rem}
-  footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem;opacity:.9}
-
-  @media (min-width:760px){
-    .top nav{display:flex}
-    .intro .wrap{grid-template-columns:1.1fr 1fr;gap:4rem}
-    .svc figure{aspect-ratio:16/8}
-    .svc .card{position:absolute;bottom:-2.5rem;width:min(430px,46%);margin:0}
-    .svc:nth-of-type(odd) .card{left:2.5rem}
-    .svc:nth-of-type(even) .card{right:2.5rem}
-    .svc{margin-bottom:6rem}
-    .stages{grid-template-columns:1fr 1.7fr;grid-template-rows:auto auto}
-    .stage.after{grid-column:2;grid-row:1 / span 2}
-    .stage.after figure{aspect-ratio:auto;height:calc(100% - 2.3rem)}
-    .review .wrap{grid-template-columns:1.6fr 1fr}
-    .contact .wrap{grid-template-columns:1.4fr 1fr;gap:4rem}
+  /* Service sections */
+  .service{background:var(--paper);position:relative;padding:clamp(2.5rem,6vw,4.5rem) 0;border-top:1px solid rgba(54,69,79,.14)}
+  .service-grid{display:grid;align-items:stretch}
+  @media (min-width:900px){
+    .service-grid{grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
+    .service.flip .service-grid{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+    .service.flip .service-text{order:2}
+    .service.flip .service-media{order:1}
   }
-  @media (min-width:980px){
-    .hero{grid-template-columns:3fr 2fr;min-height:88vh}
-    .hero-photo{aspect-ratio:auto}
-    .hero-copy{padding:3rem 3.2rem}
+  .service-text{position:relative;padding:0 var(--pad) 2.5rem;z-index:1}
+  @media (min-width:900px){
+    .service-text{padding:1rem clamp(2rem,4vw,4rem) 1rem max(var(--pad),calc((100vw - var(--wrap))/2 + var(--pad)))}
+    .service.flip .service-text{padding:1rem max(var(--pad),calc((100vw - var(--wrap))/2 + var(--pad))) 1rem clamp(2rem,4vw,4rem)}
   }
+  .service-num{font-family:"Syne",sans-serif;font-weight:800;font-size:clamp(7rem,18vw,13rem);line-height:.8;color:var(--steel);opacity:.12;display:block;margin-bottom:.6rem;letter-spacing:-.02em}
+  .num-rule{display:block;width:4.5rem;height:0;border-top:2px solid var(--rust);margin:0 0 1.5rem}
+  .service h2{font-size:clamp(1.7rem,4vw,2.7rem);color:var(--steel);margin-bottom:1rem}
+  .service p{max-width:32rem}
+  .spec{list-style:none;padding:0;margin:1.5rem 0 0;border-top:1px solid rgba(54,69,79,.2)}
+  .spec li{display:flex;gap:.75rem;padding:.75rem 0;border-bottom:1px solid rgba(54,69,79,.2);font-weight:500}
+  .spec li svg{color:var(--rust);margin-top:.2rem}
+  .service-media{position:relative;overflow:hidden;background:var(--steel);aspect-ratio:4/3;min-height:100%}
+  .service-media img{width:100%;height:100%;object-fit:cover}
+  .service-media.tall{aspect-ratio:4/5}
+
+  /* Full bleed band */
+  .band{position:relative;overflow:hidden;background:var(--steel);min-height:clamp(22rem,55vw,38rem);display:flex;align-items:flex-end}
+  .band-photo{position:absolute;inset:0;overflow:hidden;background:var(--steel)}
+  .band-photo img{width:100%;height:100%;object-fit:cover}
+  .band-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(24,30,34,0) 30%,rgba(24,30,34,.85) 100%);pointer-events:none}
+  .band-copy{position:relative;z-index:2;color:var(--white);padding-bottom:clamp(2rem,5vw,3.5rem);width:100%}
+  .band-copy h2{font-size:clamp(1.8rem,5vw,3.6rem);max-width:48rem}
+  .band-copy p{max-width:36rem;margin-top:1rem;color:rgba(255,255,255,.9)}
+
+  /* Builder section */
+  .builder{background:var(--steel);color:var(--white);padding:clamp(3.5rem,8vw,6rem) 0}
+  .builder-grid{display:grid;gap:2.5rem;align-items:start}
+  @media (min-width:860px){.builder-grid{grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:4rem}}
+  .monogram{aspect-ratio:1/1;background:var(--steel-deep);border:2px solid var(--rust);display:flex;align-items:center;justify-content:center;max-width:22rem}
+  .monogram span{font-family:"Syne",sans-serif;font-weight:800;font-size:clamp(5rem,14vw,9rem);color:var(--rust);letter-spacing:.04em;line-height:1}
+  .builder h2{font-size:clamp(1.9rem,4.5vw,3.2rem);margin-bottom:1.5rem}
+  .builder p{color:rgba(255,255,255,.88);max-width:40rem;font-size:1.08rem}
+  .areas{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;margin:1.75rem 0 2rem;padding:0;list-style:none;font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.85rem;color:#e9b3a9}
+  /* Signature: stencilled address plate, never placed on a photo */
+  .plate{display:inline-block;border:2px solid rgba(255,255,255,.6);padding:1.1rem 1.4rem;margin-top:.5rem}
+  .plate-line{display:block;font-family:"Syne",sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.32em;font-size:clamp(1.05rem,3vw,1.6rem);line-height:1.15}
+  .plate-sub{display:block;font-weight:700;letter-spacing:.3em;text-transform:uppercase;font-size:.74rem;color:rgba(255,255,255,.7);margin-top:.5rem}
+
+  /* Contact band */
+  .contact{background:var(--rust);color:var(--white);padding:clamp(3.5rem,8vw,6rem) 0}
+  .contact-grid{display:grid;gap:2rem}
+  @media (min-width:860px){.contact-grid{grid-template-columns:minmax(0,7fr) minmax(0,5fr);align-items:end}}
+  .contact h2{font-size:clamp(2.1rem,6.5vw,4.6rem);letter-spacing:.05em}
+  .contact p{font-size:1.1rem;max-width:34rem;margin-top:1.25rem}
+  .contact-details{display:grid;gap:1.25rem}
+  .tel{display:inline-flex;align-items:center;gap:.75rem;font-weight:800;font-size:clamp(1.6rem,4vw,2.4rem);text-decoration:none;color:var(--white);transition:color .15s}
+  .tel:hover{color:var(--ink)}
+  .addr{display:flex;gap:.75rem;font-weight:500;font-size:1.05rem}
+  .addr svg{margin-top:.2rem}
+  .contact .btn{background:var(--steel);border-color:var(--steel);justify-self:start}
+  .contact .btn:hover,.contact .btn:focus-visible{background:var(--ink);border-color:var(--ink)}
+
+  footer{background:var(--ink);color:rgba(255,255,255,.75);padding:2rem 0;font-size:.9rem}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem 2rem;justify-content:space-between}
+  footer strong{color:var(--white);font-family:"Syne",sans-serif;letter-spacing:.12em;text-transform:uppercase;font-size:.85rem}
 </style>
+<style id="wc-motion">/* wc-motion:1 */
+html{scroll-behavior:smooth}body{overflow-x:clip}
+.wc-bleed{width:100vw;max-width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
+.wc-frame{overflow:hidden;position:relative}
+.wc-frame>img[data-photo-slot]{width:100%;height:100%;object-fit:cover;display:block;scale:1.12;will-change:transform}
+.wc-js .wc-frame>img.wc-kb{animation:wc-kb 22s ease-in-out infinite alternate}
+@keyframes wc-kb{from{scale:1.12}to{scale:1.22}}
+.wc-js .wc-reveal{opacity:0;transform:translate3d(0,28px,0);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.wc-js .wc-reveal.wc-in{opacity:1;transform:none}
+.wc-js .wc-reveal.wc-from-left{transform:translate3d(-36px,0,0)}.wc-js .wc-reveal.wc-from-right{transform:translate3d(36px,0,0)}
+.wc-js .wc-reveal.wc-in.wc-from-left,.wc-js .wc-reveal.wc-in.wc-from-right{transform:none}
+.wc-js h1 .wc-w{display:inline-block;opacity:0;transform:translate3d(0,.45em,0);animation:wc-word .7s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes wc-word{to{opacity:1;transform:none}}
+.wc-lift,.btn,[class*="btn-"],button,[class*="card"]{transition:transform .25s ease,box-shadow .25s ease}
+.wc-lift:hover,.btn:hover,[class*="btn-"]:hover,button:hover,[class*="card"]:hover{transform:translateY(-4px);box-shadow:0 14px 30px -12px rgba(0,0,0,.35)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+.wc-frame>img[data-photo-slot]{scale:1!important;translate:none!important;animation:none!important}
+.wc-js .wc-reveal,.wc-js h1 .wc-w{opacity:1!important;transform:none!important;animation:none!important;transition:none!important}
+.wc-lift:hover,.btn:hover,[class*="btn-"]:hover,button:hover,[class*="card"]:hover{transform:none}}
+</style>
+<script>document.documentElement.classList.add('wc-js')</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="top">
+<header class="site-header">
   <div class="wrap">
-    <a class="brand" href="#">Titan Builders <span>Custom Homes</span></a>
-    <nav aria-label="Main">
+    <a class="wordmark" href="#top">Titan Builders<span>Custom Homes · Wheatfield, IN</span></a>
+    <nav class="nav" aria-label="Primary">
       <a href="#services">Services</a>
-      <a href="#build">From the ground up</a>
-      <a href="#reviews">Reviews</a>
+      <a href="#builder">The Builder</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="call" href="tel:+12198638553">
-      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
+    <a class="header-call" href="tel:+12198638553">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
       (219) 863-8553
     </a>
   </div>
 </header>
 
 <main id="main">
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="hero-photo">
-      <img data-photo-slot="hero" data-photo-query="multi-level wooden deck with railings and landscaping on a custom home" src="img/hero-3b85d467.jpg" alt="Multi-level deck with wooden railings and landscaping on a home built by Titan Builders">
-      <!-- Signature: floor plan drawn onto the property at 3064 Nelson Ln -->
-      <svg class="blueprint" viewBox="0 0 600 450" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <path class="plan" d="M330 120 H540 V330 H430 V300 H330 Z M430 120 V230 M330 230 H540 M470 230 V330 M330 175 H400 M400 120 V175"/>
-        <path class="dim" d="M330 102 H540 M330 96 V108 M540 96 V108 M558 120 V330 M552 120 H564 M552 330 H564"/>
-        <text x="390" y="94">62'-0"</text>
-        <text class="room" x="452" y="182">GREAT ROOM</text>
-        <text class="room" x="345" y="207">KITCHEN</text>
-        <text class="room" x="480" y="290">PRIMARY</text>
-        <text x="330" y="360">3064 NELSON LN</text>
-        <text x="330" y="378">WHEATFIELD, IN 46392</text>
-      </svg>
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow wc-reveal">Wheatfield, Indiana · Jasper &amp; Newton County</span>
+        <h1 id="hero-title">Custom homes<br>on your land</h1>
+        <p class="hero-lede wc-reveal">Titan Builders Custom Homes builds from the ground up for families and landowners across rural Northwest Indiana. One builder, one home, built to last on the acreage you already own or are about to buy.</p>
+        <div class="hero-actions">
+          <a class="btn wc-lift" href="tel:+12198638553">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
+            Call (219) 863-8553
+          </a>
+          <a class="btn btn-ghost wc-lift" href="#services">
+            See what we build
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          </a>
+        </div>
+        <p class="rating wc-reveal">
+          <span class="stars" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
+          </span>
+          5.0 rating on Google from 8 reviews
+        </p>
+      </div>
     </div>
-    <div class="hero-copy">
-      <p class="kicker">Wheatfield, Indiana · Newton &amp; Jasper County</p>
-      <h1 id="hero-title">Your land is the start of the plan.</h1>
-      <p class="lede">Titan Builders Custom Homes designs and builds custom homes for Northwest Indiana landowners who see rural acreage and farmland as an asset, not an obstacle.</p>
-      <div class="actions">
-        <a class="btn btn-accent" href="#contact">Schedule a consultation
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-        </a>
-        <a class="btn btn-ghost" href="tel:+12198638553">Call (219) 863-8553</a>
-      </div>
-      <div class="rating">
-        <span class="stars" aria-hidden="true">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.563.563 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
-          <svg class="icon" viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.563.563 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
-          <svg class="icon" viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.563.563 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
-          <svg class="icon" viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.563.563 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
-          <svg class="icon" viewBox="0 0 24 24"><path d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.563.563 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
-        </span>
-        <span>5.0 rating from 8 Google reviews</span>
-      </div>
+    <div class="hero-photo-row">
+      <figure class="hero-photo" style="margin:0">
+        <img src="img/hero-3b85d467.jpg" data-photo-slot="hero" data-photo-query="multi-level wooden deck with railings and stairs on custom home" alt="Multi-level wooden deck with railings and stairs on a home built by Titan Builders" width="1600" height="1066" fetchpriority="high">
+      </figure>
     </div>
   </section>
+  <div class="hero-spacer" aria-hidden="true"></div>
 
   <section class="intro" aria-labelledby="intro-title">
     <div class="wrap">
-      <h2 id="intro-title">A small-town builder whose name you know.</h2>
-      <div>
-        <p>If you already own acreage, or you're buying it, you don't need a production home company handing you a stock floor plan. You need a builder who walks your lot with you and designs the house to fit it.</p>
-        <ul>
-          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Building on rural and farmland lots</li>
-          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>A one-on-one custom design process</li>
-          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Custom-built for your lot, not a cookie-cutter plan</li>
+      <h2 id="intro-title" class="wc-reveal">Not a production builder.</h2>
+      <p class="wc-reveal">Out here a building is honest work: a solid foundation, a square frame, materials that hold up to Indiana weather. Titan Builders brings that same thinking to custom homes, with a personal floor plan for your family and a builder you can call by name.</p>
+    </div>
+  </section>
+
+  <div id="services">
+    <section class="service" aria-labelledby="s1-title">
+      <div class="service-grid">
+        <div class="service-text wc-reveal wc-from-left">
+          <span class="service-num" aria-hidden="true">1</span>
+          <span class="num-rule" aria-hidden="true"></span>
+          <h2 id="s1-title">Custom Home Design &amp; Build</h2>
+          <p>A home drawn around how your family actually lives, then built start to finish by the same team.</p>
+          <ul class="spec">
+            <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Personalized floor plans for Northwest Indiana families</li>
+            <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Design and construction under one roof</li>
+            <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Built for permanence, not for the next sale</li>
+          </ul>
+        </div>
+        <figure class="service-media" style="margin:0">
+          <img src="img/gbp-3-15bffb22.jpg" data-photo-slot="gbp-3" data-photo-query="modern custom home with dark siding and stone foundation" alt="Modern custom home with dark siding and a stone foundation" loading="lazy" width="1200" height="900">
+        </figure>
+      </div>
+    </section>
+
+    <section class="service flip" aria-labelledby="s2-title">
+      <div class="service-grid">
+        <div class="service-text wc-reveal wc-from-right">
+          <span class="service-num" aria-hidden="true">2</span>
+          <span class="num-rule" aria-hidden="true"></span>
+          <h2 id="s2-title">New Home Construction</h2>
+          <p>Ground-up builds, from footings and framing through wrap, roof and finish.</p>
+          <ul class="spec">
+            <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Ground-up custom builds on rural and acreage lots</li>
+            <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Framed and wrapped right before anything is closed in</li>
+            <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>A small number of homes at a time</li>
+          </ul>
+        </div>
+        <figure class="service-media" style="margin:0">
+          <img src="img/gbp-4-b7dc8770.jpg" data-photo-slot="gbp-4" data-photo-query="new house frame wrapped in Tyvek house wrap" alt="New house frame under construction wrapped in Tyvek house wrap" loading="lazy" width="1200" height="900">
+        </figure>
+      </div>
+    </section>
+
+    <section class="service" aria-labelledby="s3-title">
+      <div class="service-grid">
+        <div class="service-text wc-reveal wc-from-left">
+          <span class="service-num" aria-hidden="true">3</span>
+          <span class="num-rule" aria-hidden="true"></span>
+          <h2 id="s3-title">Lot &amp; Land Consultation</h2>
+          <p>Before you buy or break ground, talk through the land itself: where the house sits, what the ground will take, and what a build out here involves.</p>
+          <ul class="spec">
+            <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Rural and acreage builds across Jasper and Newton County</li>
+            <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Local knowledge of land, soil and site conditions</li>
+            <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>For landowners and buyers still shopping for a lot</li>
+          </ul>
+        </div>
+        <figure class="service-media" style="margin:0">
+          <img src="img/gbp-9-dbaca417.jpg" data-photo-slot="gbp-9" data-photo-query="home foundation and framing under construction in open soil" alt="Home foundation and early framing under construction on open ground" loading="lazy" width="1200" height="600">
+        </figure>
+      </div>
+    </section>
+
+    <section class="service flip" aria-labelledby="s4-title">
+      <div class="service-grid">
+        <div class="service-text wc-reveal wc-from-right">
+          <span class="service-num" aria-hidden="true">4</span>
+          <span class="num-rule" aria-hidden="true"></span>
+          <h2 id="s4-title">Construction Project Management</h2>
+          <p>Schedules, trades and decisions kept in one place, all the way through cabinets, counters and final walkthrough.</p>
+          <ul class="spec">
+            <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>One point of contact from start to finish</li>
+            <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Trades coordinated on your site</li>
+            <li><svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Finish work carried through to the last detail</li>
+          </ul>
+        </div>
+        <figure class="service-media" style="margin:0">
+          <img src="img/gbp-7-48f09600.jpg" data-photo-slot="gbp-7" data-photo-query="spacious kitchen with dark cabinets and marble counters" alt="Spacious finished kitchen with dark cabinets and marble counters" loading="lazy" width="1200" height="1600">
+        </figure>
+      </div>
+    </section>
+  </div>
+
+  <section class="band wc-bleed" aria-labelledby="band-title">
+    <figure class="band-photo" style="margin:0">
+      <img src="img/gbp-5-9df1eb25.jpg" data-photo-slot="gbp-5" data-photo-query="gray composite deck with pergola and patio furniture" alt="Gray composite deck with a pergola and patio furniture" loading="lazy" width="1600" height="1200">
+    </figure>
+    <div class="band-scrim" aria-hidden="true"></div>
+    <div class="band-copy">
+      <div class="wrap">
+        <h2 id="band-title" class="wc-reveal">Built inside and out to last.</h2>
+        <p class="wc-reveal">From the frame to the deck out back, every part of the house gets the same attention.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="builder" id="builder" aria-labelledby="builder-title">
+    <div class="wrap builder-grid">
+      <div class="monogram wc-reveal wc-from-left" role="img" aria-label="Titan Builders monogram">
+        <span aria-hidden="true">TB</span>
+      </div>
+      <div class="wc-reveal wc-from-right">
+        <h2 id="builder-title">A small builder.<br>Big attention per home.</h2>
+        <p>Titan Builders Custom Homes is a hands-on, low-volume builder working out of Wheatfield. The model is simple: take on fewer homes, give each one more attention, and keep a one-on-one relationship with every client instead of a sales layer.</p>
+        <p>That is why the reviews read the way they do: a 5-star rating from every client who has left one so far.</p>
+        <ul class="areas" aria-label="Service area">
+          <li>Wheatfield</li><li>Rensselaer</li><li>Lowell</li><li>DeMotte</li>
         </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="services" id="services" aria-labelledby="svc-title">
-    <div class="wrap">
-      <div class="section-head">
-        <h2 id="svc-title">What we build, and how</h2>
-        <p>From the first walk of the property to the last fixture, one builder stays with you.</p>
-      </div>
-
-      <article class="svc">
-        <figure>
-          <img data-photo-slot="gbp-1" data-photo-query="modern kitchen with white cabinets and chevron backsplash" src="img/gbp-1-b9deb420.jpg" alt="Modern kitchen with white cabinets and a chevron tile backsplash" loading="lazy">
-        </figure>
-        <div class="card">
-          <h3>Custom home design-build</h3>
-          <p>One team takes your home from first sketch to finished build, so the design you sign off on is the house you move into.</p>
-        </div>
-      </article>
-
-      <article class="svc">
-        <figure>
-          <img data-photo-slot="gbp-7" data-photo-query="kitchen with dark cabinets, stainless appliances and island" src="img/gbp-7-48f09600.jpg" alt="Kitchen with dark cabinets, stainless steel appliances and a center island" loading="lazy">
-        </figure>
-        <div class="card">
-          <h3>New home construction</h3>
-          <p>Foundation, framing, finishes. A new home built carefully on your property, start to finish.</p>
-        </div>
-      </article>
-
-      <article class="svc">
-        <figure>
-          <img data-photo-slot="gbp-5" data-photo-query="composite deck with pergola, string lights and outdoor furniture" src="img/gbp-5-9df1eb25.jpg" alt="Composite deck with a pergola, string lights and outdoor furniture" loading="lazy">
-        </figure>
-        <div class="card">
-          <h3>Site planning for rural &amp; acreage lots</h3>
-          <p>Where the house sits, how it faces, how it meets the land. We treat open acreage and farmland as an asset, not an obstacle.</p>
-        </div>
-      </article>
-
-      <article class="svc">
-        <figure>
-          <img data-photo-slot="gbp-8" data-photo-query="master bathroom vanity with dual sinks and white cabinetry" src="img/gbp-8-b031b39f.jpg" alt="Primary bathroom vanity with dual sinks and white cabinetry" loading="lazy">
-        </figure>
-        <div class="card">
-          <h3>Construction project management</h3>
-          <p>Scheduling, trades, and the day-to-day of the build handled by your builder, with a direct line to the person running your job.</p>
-        </div>
-      </article>
-
-      <article class="svc">
-        <figure>
-          <img data-photo-slot="gbp-10" data-photo-query="walk-in glass shower with pebble tile floor" src="img/gbp-10-b2ae5312.jpg" alt="Walk-in shower with a glass enclosure and pebble tile" loading="lazy">
-        </figure>
-        <div class="card">
-          <h3>Home personalization &amp; selections</h3>
-          <p>Cabinets, tile, fixtures, finishes. We help you make the choices that make the house yours.</p>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="build" id="build" aria-labelledby="build-title">
-    <div class="wrap">
-      <div class="section-head">
-        <h2 id="build-title">From bare ground to front door</h2>
-        <p>Every home starts as a cleared site and a set of plans. Here's what that looks like on a Titan build.</p>
-      </div>
-      <div class="stages">
-        <div class="stage">
-          <figure>
-            <img data-photo-slot="gbp-9" data-photo-query="foundation layout and excavation on a dirt homesite" src="img/gbp-9-dbaca417.jpg" alt="Foundation layout and excavation on a cleared homesite" loading="lazy">
-          </figure>
-          <p class="cap"><span class="tag">Before</span> Excavation and foundation</p>
-        </div>
-        <div class="stage">
-          <figure>
-            <img data-photo-slot="gbp-4" data-photo-query="house framing with house wrap on new foundation" src="img/gbp-4-b7dc8770.jpg" alt="House framing wrapped in Tyvek on a new foundation" loading="lazy">
-          </figure>
-          <p class="cap"><span class="tag">During</span> Framed and wrapped</p>
-        </div>
-        <div class="stage after">
-          <figure>
-            <img data-photo-slot="gbp-3" data-photo-query="finished dark blue modern farmhouse new construction" src="img/gbp-3-15bffb22.jpg" alt="Finished new-construction modern farmhouse with dark blue siding" loading="lazy">
-          </figure>
-          <p class="cap"><span class="tag">After</span> A finished modern farmhouse</p>
+        <div class="plate">
+          <span class="plate-line">3064 Nelson Ln</span>
+          <span class="plate-sub">Wheatfield · Indiana · 46392</span>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="review" id="reviews" aria-labelledby="rev-title">
-    <div class="wrap">
-      <div>
-        <h2 id="rev-title" class="skip">Reviews</h2>
-        <div class="big">
-          <strong>5.0</strong>
-          <span class="stars" aria-label="5 out of 5 stars">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.563.563 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.563.563 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.563.563 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.563.563 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.563.563 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/></svg>
-          </span>
-        </div>
-        <blockquote>Every one of our 8 Google reviews is five stars.</blockquote>
-        <p class="note">Most of our work comes by word of mouth from families around Wheatfield. Ask your neighbors, then ask us anything.</p>
-      </div>
-      <figure>
-        <img data-photo-slot="gbp-6" data-photo-query="primary bathroom soaking tub with pebble tile surround" src="img/gbp-6-d64713bd.jpg" alt="Primary bathroom soaking tub with a pebble tile surround" loading="lazy">
-      </figure>
     </div>
   </section>
 
   <section class="contact" id="contact" aria-labelledby="contact-title">
-    <div class="wrap">
-      <div>
-        <h2 id="contact-title">Let's talk about your land <span>and the home you want on it.</span></h2>
-        <p>Schedule a consultation to talk through your property and your custom home vision. It helps to have a few things ready:</p>
-        <ul class="checklist">
-          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Where your lot is, or the acreage you're looking at buying</li>
-          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Rough size and layout ideas: bedrooms, kitchen, outdoor living</li>
-          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>Photos or saved pictures of homes you like</li>
-          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>When you'd like to be moved in</li>
-        </ul>
-        <a class="btn btn-accent" href="tel:+12198638553">Call to schedule a consultation
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-        </a>
+    <div class="wrap contact-grid">
+      <div class="wc-reveal">
+        <h2 id="contact-title">Schedule a consultation</h2>
+        <p>Tell us about your land and the home you have in mind. We will talk through the site, the plan and what it takes to build it.</p>
       </div>
-      <div class="facts">
-        <a href="tel:+12198638553">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
-          <span>(219) 863-8553<small>Call or text to set up a time</small></span>
+      <div class="contact-details wc-reveal">
+        <a class="tel" href="tel:+12198638553">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
+          (219) 863-8553
         </a>
-        <a href="https://www.google.com/maps/search/?api=1&query=3064+Nelson+Ln+Wheatfield+IN+46392" target="_blank" rel="noopener">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
-          <span>3064 Nelson Ln<br>Wheatfield, IN 46392<small>Serving Newton and Jasper County</small></span>
+        <address class="addr" style="font-style:normal">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+          <span>Titan Builders Custom Homes<br>3064 Nelson Ln, Wheatfield, IN 46392</span>
+        </address>
+        <a class="btn wc-lift" href="tel:+12198638553">
+          Call to schedule
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
         </a>
       </div>
     </div>
@@ -368,9 +367,24 @@
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Titan Builders Custom Homes · Wheatfield, Indiana</span>
+    <span><strong>Titan Builders Custom Homes</strong> · © 2026 · Wheatfield, Indiana</span>
     <span>Website sample by Wild Card Creative Co</span>
   </div>
 <p class="wc-photo-credits wc-gbp-credit" style="font-size:.75rem;opacity:.75;margin:1rem 0 0">Photos: Titan Builders Custom Homes on Google Business Profile.</p></footer>
+<script id="wc-motion-js">/* wc-motion:1 */
+(function(){var d=document,rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var imgs=[].slice.call(d.querySelectorAll('img[data-photo-slot]'));
+imgs.forEach(function(im,i){var p=im.parentElement;if(!p||p===d.body)return;p.classList.add('wc-frame');im.classList.add('wc-kb');im.style.animationDelay=(-(i*3.7)%22)+'s';});
+var h=d.querySelector('h1');if(h&&!rm&&!h.querySelector('.wc-w')){var n=0;[].slice.call(h.childNodes).forEach(function(t){if(t.nodeType!==3||!t.textContent.trim())return;var f=d.createDocumentFragment();t.textContent.split(/(\s+)/).forEach(function(s){if(!s)return;if(/^\s+$/.test(s)){f.appendChild(d.createTextNode(s));return;}var sp=d.createElement('span');sp.className='wc-w';sp.textContent=s;sp.style.animationDelay=(0.15+0.07*n++)+'s';f.appendChild(sp);});h.replaceChild(f,t);});}
+var sel='.wc-reveal,main section:not(:first-of-type) h2,[class*="card"],[class*="caption"],[class*="copy"],[class*="quote"],[class*="panel"],[class*="step"],main section:not(:first-of-type) li';
+var els=[].slice.call(d.querySelectorAll(sel)).filter(function(e){return !e.closest('header')&&!e.closest('h1')&&!(e.parentElement&&e.parentElement.closest('.wc-reveal'));});
+els.forEach(function(e,i){e.classList.add('wc-reveal');if(!/wc-from-/.test(e.className)){var r=e.getBoundingClientRect();if(r.width&&r.width<innerWidth*0.7)e.classList.add(r.left+r.width/2<innerWidth/2?'wc-from-left':'wc-from-right');}});
+if(rm||!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('wc-in')});return;}
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.style.transitionDelay=(x.target.dataset.wcDelay||0)+'ms';x.target.classList.add('wc-in');io.unobserve(x.target);}})},{rootMargin:'0px 0px -8% 0px',threshold:0.12});
+els.forEach(function(e,i){e.dataset.wcDelay=String((i%3)*90);io.observe(e)});
+var vis=new Set(),tick=false;var io2=new IntersectionObserver(function(es){es.forEach(function(x){x.isIntersecting?vis.add(x.target):vis.delete(x.target)})});imgs.forEach(function(im){io2.observe(im.parentElement)});
+function par(){tick=false;var vh=innerHeight;vis.forEach(function(f){var r=f.getBoundingClientRect();var c=(r.top+r.height/2-vh/2)/vh;var im=f.querySelector('img[data-photo-slot]');if(im)im.style.translate='0 '+(Math.max(-1,Math.min(1,c))*-22).toFixed(1)+'px';})}
+addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(par)}},{passive:true});par();})();
+</script>
 </body>
 </html>
